@@ -11,6 +11,6 @@
        - { vlan_id : 30 }
    - name: Ensure GigabitEthernet0/5 is a trunk port and ensure 2-50 are being tagged (doesn't mean others aren't also being tagged)
      ios_l2_interface:
-       name: E0/1
+       name: Ethernet0/1
        mode: trunk
     
