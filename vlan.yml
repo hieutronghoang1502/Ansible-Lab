@@ -14,10 +14,10 @@
      name: "{{ item.int }}"
      mode: access
      access_vlan: "{{ item.vlan }}"
-   with_items: # thay the cac cong
-     - { vlan: "10", int: "Ethernet0/1"}
-     - { vlan: "20", int: "Ethernet0/2"}
-     - { vlan: "30", int: "Ethernet0/3"}
+     with_items: # thay the cac cong
+      - { vlan: "10", int: "Ethernet0/1"}
+      - { vlan: "20", int: "Ethernet0/2"}
+      - { vlan: "30", int: "Ethernet0/3"}
    - name: chuyen cong E0/0 sang mode trunk
      ios_config:
       parents: #thay the bang cong Switch ket noi den Router
