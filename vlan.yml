@@ -11,9 +11,9 @@
        - { vlan_id : 30 }
    - name: gan cong vao vlan
      ios_l2_interface:
-     name: "{{ item.int }}"
-     mode: access
-     access_vlan: "{{ item.vlan }}"
+      name: "{{ item.int }}"
+      mode: access
+      access_vlan: "{{ item.vlan }}"
      with_items: # thay the cac cong
       - { vlan: "10", int: "Ethernet0/1"}
       - { vlan: "20", int: "Ethernet0/2"}
