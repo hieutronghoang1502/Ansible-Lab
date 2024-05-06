@@ -1,0 +1,11 @@
+- name: Tạo vlan
+ ios_vlan:
+ vlan_id: 100
+ name: test-vlan
+ state: present
+- name: Thêm cổng vào vlan
+ ios_vlan:
+ vlan_id: 100
+ interfaces:
+ - E0/2
+ - E0/3
