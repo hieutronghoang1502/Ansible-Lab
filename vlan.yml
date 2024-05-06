@@ -1,3 +1,4 @@
+---
 - name: Cau hinh tren Switch
   hosts: SW
   gather_facts: no
